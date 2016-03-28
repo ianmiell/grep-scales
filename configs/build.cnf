@@ -15,4 +15,5 @@ shutit.core.module.allowed_images:["ubuntu"]
 [build]
 base_image:ubuntu
 do_update:no
+check_exit:no
 
