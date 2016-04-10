@@ -17,6 +17,8 @@ BEGINS
 ''' + afile + '''
 ENDS
 '''
+		follow_on_context={'check_command':'ls','context':'docker'}
+		#shutit.challenge('move file afile to filename: 1',challenge_type='golf',expect='1',follow_on_context=follow_on_context)
 		shutit.challenge(afile_message + '''
 For your first task, grep out the last line, ie the one that reads: 'And this is the last line.'.''','And this is the last line.',hints=['last','grep last afile'])
 		shutit.golf(afile_message + 'Return a count of the number of lines with "UPPER" in it (case sensitive)','1',hints=['-c','ask again to get answer','grep -c UPPER afile'])
